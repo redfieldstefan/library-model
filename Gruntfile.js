@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-jscs');
 
-	var srcFiles = ['index.js', 'library.js', 'shelf.js', 'book.js', 'noise.js'];
+	var srcFiles = [ 'index.js', 'library-modules/library.js', 'library-modules/shelf.js', 'library-modules/book.js', 'library-modules/noise.js', 'Gruntfile.js' ];
 
 	grunt.initConfig({
 		jshint: {
@@ -40,4 +40,3 @@ module.exports = function(grunt) {
 	]);
 
 };
-

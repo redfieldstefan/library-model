@@ -6,11 +6,11 @@
 
 'use strict';
 
-var Library = require('./library');
+var Library = require('./library-modules/library');
 var library = new Library();
-var Shelf = require('./shelf.js')(library);
-var Book = require('./book.js');
-var makeNoise = require('./noise.js');
+var Shelf = require('./library-modules/shelf')(library);
+var Book = require('./library-modules/book');
+var makeNoise = require('./library-modules/noise');
 
 		
 var fiction = new Shelf('fiction');
