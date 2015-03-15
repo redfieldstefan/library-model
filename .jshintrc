@@ -3,12 +3,14 @@
 		"require": false,
 		"document": false,
 		"console": false,
-		"alert": false
+		"alert": false,
+		"module": false
 	},
 	
 
 	"globalstrict": true,
 	"trailing": true,
 	"undef": true,
-	"indent": 4
+	"indent": 4,
+	"quotmark": "single"
 }
