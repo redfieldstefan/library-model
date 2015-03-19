@@ -10,6 +10,10 @@ module.exports = function(library) {
 			library.checkedIn.push(book);
 			library.masterList.push(book);
 		};
+		this.removeBook = function(book) {
+			var bookToRemove = this.books.indexOf(book);
+			this.books.splice(bookToRemove, 1);
+		}
 
 		library.shelves.push(this);
 	};
