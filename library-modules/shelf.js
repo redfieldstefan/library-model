@@ -13,7 +13,7 @@ module.exports = function(library) {
 		this.removeBook = function(book) {
 			var bookToRemove = this.books.indexOf(book);
 			this.books.splice(bookToRemove, 1);
-		}
+		};
 
 		library.shelves.push(this);
 	};
