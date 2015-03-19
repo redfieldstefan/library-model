@@ -46,26 +46,26 @@ Library.prototype.listOfTitles = function() {
 };
 
 Library.prototype.searchTitle = function(title) {
-	this.checkedIn.forEach(function(el) {
-		if (el.title === title) {
-			console.log('We have that one! ' + title + ' by ' + el.author + ' is in the ' +  el.section + ' section.');
+	this.checkedIn.forEach(function(book) {
+		if (book.title === title) {
+			console.log('We have that one! ' + title + ' by ' + book.author + ' should be in the ' +  book.section + ' section.');
 		} 
 	});
 };
 
 Library.prototype.searchAuthor = function(author) {
-	this.checkedIn.forEach(function(el) {
-		if (el.author === author) {
-			console.log('We sure do have some titles by ' + el.author + ', we have ' + el.title + ' in the ' + el.section + ' section.');
+	this.checkedIn.forEach(function(book) {
+		if (book.author === author) {
+			console.log('We sure do have some titles by ' + book.author + ', we have ' + book.title + ' in the ' + book.section + ' section.');
 		} 
 	});
 };
 
 Library.prototype.searchSection = function(section) {
-	this.shelves.forEach(function(el) {
-		if (el.section === section){
-			console.log('Here are the ' + el.section + ' titles.');
-			el.books.forEach(function(book) {
+	this.shelves.forEach(function(shelf) {
+		if (shelf.section === section){
+			console.log('Here are the ' + shelf.section + ' titles.');
+			shelf.books.forEach(function(book) {
 				console.log(book.title + ' by ' + book.author);
 			});
 		} 

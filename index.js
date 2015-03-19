@@ -12,7 +12,6 @@ var Shelf = require('./library-modules/shelf')(library);
 var Book = require('./library-modules/book');
 var makeNoise = require('./library-modules/noise');
 
-		
 var fiction = new Shelf('fiction');
 var fantasy = new Shelf('fantasy');
 var nonFiction = new Shelf('non fiction');
@@ -26,6 +25,7 @@ var whiteNoise = new Book('White Noise', 'Don Delilo', 'fiction');
 var earthSea = new Book('Wizard of Earthsea', ' Ursula K. Le Guin', 'fantasy');
 
 mystery.addBook(baskerville);
+mystery.removeBook(baskerville);
 fiction.addBook(whiteNoise);
 fantasy.addBook(earthSea);
 childrens.addBook(pooh);
