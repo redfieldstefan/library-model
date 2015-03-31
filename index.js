@@ -32,9 +32,13 @@ childrens.addBook(pooh);
 childrens.addBook(redWall);
 
 library.searchTitle('Redwall');
-library.searchAuthor('Christopher Robin');
+library.searchAuthor('A. A. Milne');
 library.searchSection('childrens');
+library.checkOut('Redwall');
 library.listOfTitles();
-makeNoise();
-makeNoise();
-makeNoise();
+// makeNoise();
+// makeNoise();
+// makeNoise();
+mystery.addBook(baskerville);
+library.checkIn('Redwall');
+library.listOfTitles();

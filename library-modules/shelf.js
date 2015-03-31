@@ -7,13 +7,13 @@ module.exports = function(library) {
 		this.books = [];
 		this.addBook = function(book) {
 			this.books.push(book);
-			library.checkedIn.push(book);
-			library.masterList.push(book);
+			// library.checkedIn.push(book);
+			// library.masterList.push(book);
 		};
 		this.removeBook = function(book) {
 			var bookToRemove = this.books.indexOf(book);
 			this.books.splice(bookToRemove, 1);
-			console.log(book + ' has been removed.');
+			console.log(book.title + ' has been removed.');
 		};
 
 		library.shelves.push(this);
