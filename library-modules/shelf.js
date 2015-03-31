@@ -7,8 +7,6 @@ module.exports = function(library) {
 		this.books = [];
 		this.addBook = function(book) {
 			this.books.push(book);
-			// library.checkedIn.push(book);
-			// library.masterList.push(book);
 		};
 		this.removeBook = function(book) {
 			var bookToRemove = this.books.indexOf(book);
