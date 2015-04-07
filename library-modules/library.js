@@ -36,7 +36,7 @@ Library.prototype.checkOut = function(title) {
 					}
 				}
 			});
-		});
+	});
 	
 };
 

@@ -9,7 +9,8 @@ Books are defined by the parameters `title`, `author`, and `section`.
 
 Shelves hold books, and shelves are defined by `section`. Upon inititialization, shelves are pushed to the Library.
 
-The library holds shelves, and a master array of all the books in the shelves. You `checkOut` and `checkIn` books at the library level.
+The library holds shelves. You `checkOut` and `checkIn` books at the library level, these functions iterate through each shelf's books array and update each book's `checkedStatus`.
+
 You may also search the library for titles, authors, and see lists of books for each section.
 
 If you `makeNoise` the librarian will get upset. 
